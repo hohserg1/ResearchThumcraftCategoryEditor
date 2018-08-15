@@ -1,13 +1,13 @@
-package hohserg.advancedauromancy
+package hohserg.researchthumcraftcategoryeditor
 
-import hohserg.advancedauromancy.client.ClientEventHandler
+import hohserg.researchthumcraftcategoryeditor.client.ClientEventHandler
 import thaumcraft.api.ThaumcraftApi
 import thaumcraft.api.aspects.{Aspect, AspectList}
 import thaumcraft.api.research.ResearchCategories
 
 @Mod(name="ResearchThumcraftCategoryEditor",modid = Main.researchThumcraftCategoryEditorModId, version="1.0",modLanguage = "scala",dependencies = "required-after:thaumcraft")
 object Main {
-  @SidedProxy(clientSide = "hohserg.advancedauromancy.ClientProxy",serverSide = "hohserg.advancedauromancy.ServerProxy")
+  @SidedProxy(clientSide = "hohserg.researchthumcraftcategoryeditor.ClientProxy",serverSide = "hohserg.researchthumcraftcategoryeditor.ServerProxy")
   var proxy:CommonProxy = _
 
   final val researchThumcraftCategoryEditorModId="ResearchThumcraftCategoryEditor".toLowerCase
